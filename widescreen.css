@@ -1,0 +1,349 @@
+/* Flex styles -------------------------------------------------*/
+
+
+ body {
+   background: #0B0A0D;
+   font-family: 'Helvetica Neue';
+   text-rendering: optimizeLegibility !important;
+   -webkit-font-smoothing: antialiased !important; 
+   font-size: 62.5%;
+}
+.none{
+   display: none;
+}
+
+ /* Generic styles ----------------------------------------------*/
+
+ @media only screen and (max-width: 600px) {
+      header#main-header div.cadastro div.botao-entrar{
+         display: none;
+      }
+      header#main-header nav #cdsaovivo{
+         display: none;
+      }
+
+      .h1{
+         font-size: 1em;
+         color: #21D361;
+         margin-top: 25px;
+         display: flex;
+      }
+      .h1 >img {
+         margin-left: 10px;
+         width: 6px;
+      }
+
+
+      div.main{
+         align-content: center;
+         margin-left: 20px;
+         margin-right: 20px;
+      }
+
+      header#main-header div.content{
+         display: flex;
+         align-content: center;
+         justify-content: space-between;
+         height: 100%;
+         width: 100%;
+      }
+
+      div.cards {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(130px, 2fr));
+         grid-gap: 21px;
+      }
+      
+      div.article-img {
+         height: 50px;
+         width: 100%;
+         object-fit: cover;
+         box-shadow: 0.5px 0.5px 2px rgba(0, 0,0,1);
+         border-radius: 4px;
+      }
+      #cards {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
+         grid-gap: 1%;
+      }
+
+      #article-img {
+         height: 150px;
+         width: 100%;
+         object-fit: cover;
+         box-shadow: 0.5px 0.5px 2px rgba(0, 0,0,1);
+         border-radius: 4px;  
+       }
+
+      #main-header{
+         height: 60px;
+        }
+      
+      #btn-pesquisa{
+         height: 35px;
+         width: 100%;
+        }
+
+        #btn-cadastro{
+         background: #21D361;
+         width: 6em;
+         height: 35px;
+      
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         box-shadow: 0.5px 0.5px 2px rgba(0, 0,0,1);
+      
+         color: #fff;
+         font-weight: bold;
+         font-size: 1.4em;
+         border-radius: 4px;
+         
+         margin-right: 1.4em;
+        }
+        #article-title {
+         display: flex;
+         width: 100%;
+         height: 100%;
+      
+         margin-top: 90px;
+         margin-left: 15px;
+         flex-direction: column;
+      
+       }
+}
+
+
+ /* Generic styles ----------------------------------------------*/
+
+ .main{
+   align-content: center;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+
+.content{
+   width: 100%;
+   align-content: center;
+   margin: 0 auto;
+   margin-left: 1%;
+   margin-right: 1%;
+
+}
+.h1{
+   font-size: 1.9em;
+   color: #21D361;
+   margin-top: 25px;
+   display: flex;
+}
+.h1 >img {
+   margin-left: 10px;
+}
+
+
+/*    HEADER   */
+
+header.main-header{
+   width: 100vw;
+   height: 80px;
+   background: #111116;
+   box-shadow: 0.5px 0.5px 2px rgba(0, 0,0,1);
+  
+   display: flex;
+   position: relative;
+}
+
+header.main-header .content{
+   display: flex;
+   align-content: center;
+   justify-content: space-between;
+   height: 100%;  
+   
+}
+
+header.main-header nav {
+   display: flex;
+}
+header.main-header nav{
+   margin-left: 20px;
+}
+header.main-header div.side{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+header.main-header div.side input{
+   width: 25vw;
+   height: 45px;
+
+   background: #202024 url("/images/lupa.svg") no-repeat 15px;
+
+   border: 0;
+   border-radius: 4px;
+
+   padding-left: 40px;
+   font-size: 1.4em;
+   color: #5A5A5A;
+
+   box-shadow: 0.5px 0.5px 2px rgba(0, 0,0,1);
+   padding-right: 1.2em;
+
+}
+
+header.main-header div.cadastro{
+   display: flex;
+   align-items: center;
+   
+
+}
+
+header.main-header div.cadastro div.botao-entrar{
+   background: #202024;
+   width: 8em;
+   height: 45px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0.5px 0.5px 2px rgba(0, 0,0,1);
+
+   color: #fff;
+   font-weight: bold;
+   font-size: 1.4em;
+   border-radius: 4px;
+   
+   margin-right: 1.4em;
+   margin-left: 1.4em;
+}
+
+header.main-header div.cadastro div.botao-cadastro{
+   background: #21D361;
+   width: 8em;
+   height: 45px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0.5px 0.5px 2px rgba(0, 0,0,1);
+
+   color: #fff;
+   font-weight: bold;
+   font-size: 1.4em;
+   border-radius: 4px;
+   
+   margin-right: 1.4em;
+}
+
+
+ 
+ /* Grid styles -------------------------------------------------*/
+ .cards {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(15%,1fr));
+   grid-gap: 1%;
+ }
+ 
+ .cards-destaque {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+   grid-gap: 1%;
+   
+ }
+ 
+ 
+
+ 
+ .cards {
+   width: 100%;
+   margin: 0 auto;
+   margin-top: 25px;
+ }
+ 
+ article {
+   position: relative;
+   width: 100%;
+ }
+ 
+ .article-img {
+   height: 250px;
+   width: 100%;
+   object-fit: cover;
+   box-shadow: 0.5px 0.5px 2px rgba(0, 0,0,1);
+   border-radius: 4px;
+
+ }
+ 
+ .article-title {
+   display: flex;
+   width: 100%;
+   height: 100%;
+
+   margin-top: 190px;
+   margin-left: 15px;
+   flex-direction: column;
+
+ }
+ .article-title h1{
+   font-size: 1.6em;
+   font-weight: bold;
+   color: #fff;
+ }
+ .article-title p{
+   font-size:1em;
+   font-weight: bold;
+   color: #A5A3A3;
+   margin-top: 10px;
+}
+ .article-title-mask {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   background:  linear-gradient(rgba(0, 0, 0, 0.33), black);
+   border-radius: 4px;
+ }
+ 
+
+
+
+
+ 
+ .article-img-destaque {
+   height: 300px;
+   width: 100%;
+   object-fit: cover;
+   box-shadow: 0.5px 0.5px 2px rgba(0, 0,0,1);
+   border-radius: 4px;
+
+ }
+ 
+ .article-title-destaque {
+   display: flex;
+   width: 100%;
+   height: 100%;
+
+   margin-top: 190px;
+   margin-left: 15px;
+   flex-direction: column;
+
+ }
+ .article-title-destaque h1{
+   font-size: 1.6em;
+   font-weight: bold;
+   color: #fff;
+ }
+ .article-title-destaque p{
+   font-size:1em;
+   font-weight: bold;
+   color: #A5A3A3;
+   margin-top: 10px;
+}
+ .article-title-mask-destaque {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   background:  linear-gradient(rgba(0, 0, 0, 0.33), black);
+   border-radius: 4px;
+ }
+ 

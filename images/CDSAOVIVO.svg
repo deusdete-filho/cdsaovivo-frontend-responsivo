@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144" height="39" viewBox="0 0 144 39">
+  <defs>
+    <filter id="CDSAOVIVO" x="0" y="0" width="144" height="39" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#CDSAOVIVO)">
+    <text id="CDSAOVIVO-2" data-name="CDSAOVIVO" transform="translate(4.5 25.5)" fill="#fff" font-size="22" font-family="AvenirNext-Bold, Avenir Next" font-weight="700"><tspan x="0" y="0">CDSAOVIVO</tspan></text>
+  </g>
+</svg>
